@@ -23,30 +23,30 @@ public class megan_bonus {
 
 
 
-    // From Stack Overflow
+    // From JavaCodeGeeks Example
 
-        int max = 100;
-
-        System.out.println("Generate Prime numbers between 1 and " + max);
-
-        // loop through the numbers one by one
-        for (int i = 1; i<max; i++) {
-
-            boolean isPrimeNumber = true;
-
-            // check to see if the number is prime
-            for (int j = 2; j < i; j++) {
-                if (i % j == 0) {
-                    isPrimeNumber = false;
-                    break; // exit the inner for loop
-                }
-            }
-
-            // print the number if prime
-            if (isPrimeNumber) {
-                System.out.print(i + " ");
-            }
-        }
+//        int max = 100;
+//
+//        System.out.println("Generate Prime numbers between 1 and " + max);
+//
+//        // loop through the numbers one by one
+//        for (int i = 1; i<max; i++) {
+//
+//            boolean isPrimeNumber = true;
+//
+//            // check to see if the number is prime
+//            for (int j = 2; j < i; j++) {
+//                if (i % j == 0) {
+//                    isPrimeNumber = false;
+//                    break; // exit the inner for loop
+//                }
+//            }
+//
+//            // print the number if prime
+//            if (isPrimeNumber) {
+//                System.out.print(i + " ");
+//            }
+//        }
 
 
 //       long prime = 0;
@@ -56,11 +56,28 @@ public class megan_bonus {
 //            }
 //        }
 
+
+
+
+
 //        3) output a table representing the binary representations of the powers of 2
 //        decimal       |       binary
 //        1     |     00000001
 //        2     |     00000010
 //        4     |     00000100 (edited)
+
+
+        int input=5;
+
+        System.out.println("decimal | binary");
+        System.out.println("------- | ------");
+        for(int i = 1; i <= input; i++) {
+            System.out.print(i + " "); //show integer
+            System.out.println(Integer.toBinaryString(i) + " "); //show binary
+        }
+
+
+
     }
 }
 
